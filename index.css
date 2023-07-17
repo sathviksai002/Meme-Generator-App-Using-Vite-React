@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  margin: 0;
+}
+
+.troll-face{
+  width: 80px;
+  height:60px;
+  flex-shrink: 0;
+}
+
+.meme-header{
+  display: flex;
+  align-items: center;
+  height : 85px;
+  background: linear-gradient(90deg, purple 2%, #E6E6FA 90%);
+  gap: 40px;
+  padding-left: 10px;
+  color: #ffffff;
+  flex-shrink: 0;
+  box-shadow:  2px 12px 12px 1px rgba(0, 0, 0, 0.2);
+}
+
+.meme-text{
+  letter-spacing: 0.6vh;
+  text-transform: capitalize;
+  flex-shrink: 0;
+  margin-right: auto;
+}
+
+.meme-component{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+  flex-shrink: 0;
+  gap:50px;
+}
+
+.first-text{
+  width: 250px;
+  height: 35.6px;
+  border: 1px solid  gray;
+  border-radius: 7px;
+  flex-shrink: 0;
+  font-family: "Karla", sans-serif;
+  color:black;
+  font-weight: bold;
+}
+
+.second-text{
+  width: 250px;
+  height: 35.6px;
+  border: 1px solid  gray;
+  border-radius: 7px;
+  flex-shrink: 0;
+  color:black;
+  font-weight: bold;
+  font-family: "Karla", sans-serif;
+}
+
+.submit-button{
+  width: 570px;
+  height: 36px;
+  flex-shrink: 0;
+  border-radius: 7px;
+  border: none;
+  background:  linear-gradient(135deg, #711F8D 0%, #A818DA 100%);
+  color: white;
+  font-weight: bold;
+  text-transform: capitalize;
+  cursor: pointer;
+  margin-top: 130px;
+  position: absolute;
+  transition: 0.5s;
+}
+
+.submit-button:after{
+  opacity: 0;
+  top: 14px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.submit-button:hover{
+  padding-right: 24px;
+  padding-left: 8px;
+  color: black;
+}
+
+button:hover::after{
+  opacity: 1px;
+  right:10px;
+}
+
+.form{
+  max-width: 100%;
+  display: flex;
+  max-height: 100%;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+}
+
+.meme--text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:
+      2px 2px 0 #000,
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      0 2px 0 #000,
+      2px 0 0 #000,
+      0 -2px 0 #000,
+      -2px 0 0 #000,
+      2px 2px 5px #000;
+}
+
+
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
+}
+
+.memes {
+  position: relative;
+}
